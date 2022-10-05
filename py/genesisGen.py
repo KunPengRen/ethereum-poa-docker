@@ -61,7 +61,7 @@ def cliqueGenesis(addresses, chainId):
     }
     res["nonce"] = "0x0"
     res["difficulty"] = "0x1"
-    res["timestamp"] = "0x5d934f79"
+    res["timestamp"] = "0x5f5e100"
     return res
 
 
