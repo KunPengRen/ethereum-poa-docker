@@ -45,7 +45,7 @@ def cliqueGenesis(addresses,chainId):
 		"petersburgBlock": 0,
 		"istanbulBlock": 0,
 		"clique": {
-			"period": 10,
+			"period": 4,
 			"epoch": 30000
 		}
 		}
@@ -59,7 +59,7 @@ def baseGenesis():
 		"mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
 		"coinbase": "0x0000000000000000000000000000000000000000",
 		"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-		"gasLimit": "0x47b760"
+		"gasLimit": "0x2625a00"
 	}
 def getAdresses(pubKeyList):
 	res = []

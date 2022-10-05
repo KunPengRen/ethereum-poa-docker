@@ -13,7 +13,7 @@ for i in range(1,number_node+1):
     port=str(8502+i)
     node['hostname']='node_'+str(i)
     node['image']='ethereum/client-go'
-    node['command']='--datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key --port '+str(http_port)+' --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*" --http.port '+str(port)+' --http.api db,eth,net,web3,admin,personal,miner,signer:insecure_unlock_protect  --networkid 1234 --unlock 0 --password /root/files/password --mine --allow-insecure-unlock'
+    node['command']='--datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key --port '+str(http_port)+' --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*" --http.port '+str(port)+' --http.api db,eth,net,web3,admin,personal,miner,signer:insecure_unlock_protect  --networkid '+str(chain_id)+' --unlock 0 --password /root/files/password --mine --allow-insecure-unlock'
     volumes=[]
     volumes.append('./nodes/node_'+str(i)+'/keys/password:/root/files/password:ro')
     volumes.append('./nodes/node_'+str(i)+'/keys/priv.key:/root/files/priv.key:ro')
