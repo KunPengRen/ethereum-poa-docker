@@ -1,0 +1,8 @@
+=============== Oct 6, 2022 (+08) ===============
+00:37:56.458369 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:37:56.463464 db@open opening
+00:37:56.463602 version@stat F·[] S·0B[] Sc·[]
+00:37:56.464845 db@janitor F·2 G·0
+00:37:56.464851 db@open done T·1.378826ms
+00:37:56.480610 db@close closing
+00:37:56.480629 db@close done T·18.335µs
