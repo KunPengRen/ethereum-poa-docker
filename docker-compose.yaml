@@ -13,6 +13,8 @@ services:
     - ./nodes/node_1/keys/password:/root/files/password:ro
     - ./nodes/node_1/keys/priv.key:/root/files/priv.key:ro
     - ./nodes/node_1/data:/root/data:rw
+    - /root/data/geth/nodes/
+    - /root/data/geth/triecache/
   node2:
     command: --datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key
       --port 30314 --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*"
@@ -27,6 +29,8 @@ services:
     - ./nodes/node_2/keys/password:/root/files/password:ro
     - ./nodes/node_2/keys/priv.key:/root/files/priv.key:ro
     - ./nodes/node_2/data:/root/data:rw
+    - /root/data/geth/nodes/
+    - /root/data/geth/triecache/
   node3:
     command: --datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key
       --port 30315 --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*"
@@ -41,6 +45,8 @@ services:
     - ./nodes/node_3/keys/password:/root/files/password:ro
     - ./nodes/node_3/keys/priv.key:/root/files/priv.key:ro
     - ./nodes/node_3/data:/root/data:rw
+    - /root/data/geth/nodes/
+    - /root/data/geth/triecache/
   node4:
     command: --datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key
       --port 30316 --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*"
@@ -55,4 +61,6 @@ services:
     - ./nodes/node_4/keys/password:/root/files/password:ro
     - ./nodes/node_4/keys/priv.key:/root/files/priv.key:ro
     - ./nodes/node_4/data:/root/data:rw
+    - /root/data/geth/nodes/
+    - /root/data/geth/triecache/
 version: '3'

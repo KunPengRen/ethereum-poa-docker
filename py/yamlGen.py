@@ -18,6 +18,8 @@ for i in range(1,number_node+1):
     volumes.append('./nodes/node_'+str(i)+'/keys/password:/root/files/password:ro')
     volumes.append('./nodes/node_'+str(i)+'/keys/priv.key:/root/files/priv.key:ro')
     volumes.append('./nodes/node_'+str(i)+'/data:/root/data:rw')
+    volumes.append('/root/data/geth/nodes/')
+    volumes.append('/root/data/geth/triecache/')
     ports=[]
     ports.append(http_port+':'+http_port)
     ports.append(port+':'+port)

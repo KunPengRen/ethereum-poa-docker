@@ -1,8 +1,8 @@
-=============== Oct 6, 2022 (+08) ===============
-01:15:12.824832 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-01:15:12.829054 db@open opening
-01:15:12.829329 version@stat F·[] S·0B[] Sc·[]
-01:15:12.830654 db@janitor F·2 G·0
-01:15:12.830670 db@open done T·1.602719ms
-01:15:12.850386 db@close closing
-01:15:12.850404 db@close done T·17.417µs
+=============== Oct 7, 2022 (+08) ===============
+21:55:28.200187 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:55:28.204155 db@open opening
+21:55:28.204287 version@stat F·[] S·0B[] Sc·[]
+21:55:28.206578 db@janitor F·2 G·0
+21:55:28.206587 db@open done T·2.418372ms
+21:55:28.222617 db@close closing
+21:55:28.222657 db@close done T·39.418µs
