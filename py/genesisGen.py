@@ -16,7 +16,7 @@ def exportGenesis(consortium, chainId):
     res = {}
     if consortium == "poa":
         res = cliqueGenesis(addressList, chainId)
-    with open(nodes_path+"/genesis.json", "w") as outfile:
+    with open("./genesis.json", "w") as outfile:
         json.dump(res, outfile)
     outfile.close()
     return
