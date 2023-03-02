@@ -14,8 +14,10 @@ Documentation used:
 - Docker-compose
 - Python
 
-## Run
+## build network files
 - Clone this repository
 - Run `pip install -r requirements.txt`
 - Run `bash start.sh`
+
+## Run Ethereum network
 - Run `docker-compose up -d`
