@@ -6,7 +6,7 @@ services:
       1122 --unlock 0 --password /root/files/password --mine --allow-insecure-unlock  --ws
       --ws.port 33445 --ws.addr "0.0.0.0" --ws.origins="*" --ws.api eth,net,web3
     hostname: node_1
-    image: ethereum/client-go
+    image: ethereum/client-go:release-1.10
     ports:
     - 30313:30313
     - 8503:8503
