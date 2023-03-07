@@ -9,9 +9,9 @@ echo $BASH_VERSION
 #bash_version    : 4.1.5(1)-release
 #==========================================================================
 
-nodes_path="./"
-number_node=4
-chain_id="1234"
+nodes_path="./nodes"
+number_node=2
+chain_id="1122"
 declare -A addresses
 getNumberNodes(){
     echo "Enter number of nodes:"

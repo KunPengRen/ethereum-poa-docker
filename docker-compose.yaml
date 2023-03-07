@@ -17,4 +17,22 @@ services:
     - ./nodes/node_1/data:/root/data:rw
     - /root/data/geth/nodes/
     - /root/data/geth/triecache/
+  node2:
+    command: --datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key
+      --port 30314 --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*"
+      --http.port 8504 --http.api db,eth,net,web3,admin,personal,miner,signer:insecure_unlock_protect  --networkid
+      1122 --unlock 0 --password /root/files/password --mine --allow-insecure-unlock  --ws
+      --ws.port 33446 --ws.addr "0.0.0.0" --ws.origins="*" --ws.api eth,net,web3
+    hostname: node_2
+    image: ethereum/client-go:release-1.10
+    ports:
+    - 30314:30314
+    - 8504:8504
+    - 33446:33446
+    volumes:
+    - ./nodes/node_2/keys/password:/root/files/password:ro
+    - ./nodes/node_2/keys/priv.key:/root/files/priv.key:ro
+    - ./nodes/node_2/data:/root/data:rw
+    - /root/data/geth/nodes/
+    - /root/data/geth/triecache/
 version: '3'

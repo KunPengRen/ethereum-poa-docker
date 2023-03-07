@@ -1,8 +1,8 @@
-=============== Mar 2, 2023 (+08) ===============
-21:42:51.602395 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-21:42:51.606481 db@open opening
-21:42:51.606753 version@stat F·[] S·0B[] Sc·[]
-21:42:51.608328 db@janitor F·2 G·0
-21:42:51.608337 db@open done T·1.844737ms
-21:42:51.623959 db@close closing
-21:42:51.623982 db@close done T·23.008µs
+=============== Mar 7, 2023 (UTC) ===============
+14:08:15.391726 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:08:15.482671 db@open opening
+14:08:15.483474 version@stat F·[] S·0B[] Sc·[]
+14:08:15.533065 db@janitor F·2 G·0
+14:08:15.533085 db@open done T·50.394903ms
+14:08:15.921982 db@close closing
+14:08:15.922069 db@close done T·65.682µs
