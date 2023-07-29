@@ -10058,7 +10058,7 @@ def cliqueGenesis(addresses, chainId):
         "petersburgBlock": 0,
         "istanbulBlock": 0,
         "clique": {
-            "period": 5,
+            "period": 12,
             "epoch": 30000
         }
     }
@@ -10073,7 +10073,7 @@ def baseGenesis():
         "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "coinbase": "0x0000000000000000000000000000000000000000",
         "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-        "gasLimit": "0x3938700"
+        "gasLimit": "0x1c9c380"
     }
 
 
