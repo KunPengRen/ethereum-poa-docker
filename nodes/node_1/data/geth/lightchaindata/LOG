@@ -1,8 +1,0 @@
-=============== Jul 29, 2023 (UTC) ===============
-13:58:27.846367 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-13:58:27.982671 db@open opening
-13:58:27.986864 version@stat F·[] S·0B[] Sc·[]
-13:58:28.041583 db@janitor F·2 G·0
-13:58:28.041661 db@open done T·58.965564ms
-13:58:29.001853 db@close closing
-13:58:29.001996 db@close done T·128.613µs
