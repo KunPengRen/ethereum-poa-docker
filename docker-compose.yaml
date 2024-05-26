@@ -3,7 +3,7 @@ services:
     command: --datadir  /root/data --nodiscover --syncmode full --nodekey /root/files/priv.key
       --port 30313 --http --http.addr "0.0.0.0" --http.vhosts="*" --http.corsdomain="*"
       --http.port 8503 --http.api db,eth,net,web3,admin,personal,miner,signer:insecure_unlock_protect  --networkid
-      1234 --unlock 0 --password /root/files/password --mine --allow-insecure-unlock  --ws
+      4321 --unlock 0 --password /root/files/password --mine --allow-insecure-unlock  --ws
       --ws.port 33445 --ws.addr "0.0.0.0" --ws.origins="*" --ws.api eth,net,web3
     hostname: node_1
     image: ethereum/client-go:release-1.10
